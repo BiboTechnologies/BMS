@@ -2246,7 +2246,7 @@ for (let i = 1; i < medicationRows.length; i++) {
 
 doc.autoTable({
   startY: 200,
-  head: [['Medication', 'Prescription', 'Milligrams']],
+  head: [['Medication', 'Prescription', 'Pieces']],
   body: medicationTableData,
   theme: 'grid',
   styles: {
