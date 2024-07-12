@@ -2132,7 +2132,7 @@ doc.text(telephoneContacts, headerBoxCenterX, telephoneContactsY, { align: 'cent
 
 // Reset the font
 doc.setFont('helvetica', 'normal');
-// Print the heading "LABORATORY REPORT"
+// Print the heading "PATIENT'S DETAILS"
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(13);
 const reportHeading = 'LABORATORY REPORT';
