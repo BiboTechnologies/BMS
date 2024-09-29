@@ -1510,7 +1510,8 @@ function displayVisitsPopup(patientName) {
           <td>${visitData.disability}</td>
           <td>${visitData.chronicIllness}</td>
           <td>${visitData.drugAbuse}</td>
-          <td>${visitData.allergies.join(', ')}</td>
+            <td>${Array.isArray(visitData.allergies) ? visitData.allergies.join(', ') : ''}</td>
+
         `;
 
         tableBody.appendChild(row);
@@ -2132,7 +2133,7 @@ doc.text(telephoneContacts, headerBoxCenterX, telephoneContactsY, { align: 'cent
 
 // Reset the font
 doc.setFont('helvetica', 'normal');
-// Print the heading "PATIENT'S DETAILS"
+// Print the heading "LABORATORY REPORT"
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(13);
 const reportHeading = 'LABORATORY REPORT';
